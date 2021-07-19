@@ -1,10 +1,7 @@
 ---
-- hosts: 3.238.163.54
-  become: yes
-  tasks:
-    - name: install packages
-      apt:
-        state: present
-        name:
-           - pip
-           - apache2
+tasks:
+  - name: install packages
+    apt:
+      name: tomcat
+      state: latest
+      become: yes
