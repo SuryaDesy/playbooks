@@ -4,5 +4,5 @@
   tasks:
     - name: install packages
       apt:
-        name: tomcat
+        name: apache2
         state: latest
