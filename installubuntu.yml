@@ -1,7 +1,7 @@
 ---
-tasks:
-  - name: install packages
-    apt:
-      name: tomcat
-      state: latest
-      become: yes
+- tasks:
+    - name: install packages
+      apt:
+        name: tomcat
+        state: latest
+        become: yes
