@@ -1,9 +1,10 @@
 ---
 - hosts: 3.238.163.54
+  become: yes
   tasks:
     - name: install packages
       apt:
         state: present
         name:
            - pip
-           - vim
+           - apache2
