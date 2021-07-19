@@ -1,5 +1,6 @@
 ---
-- tasks:
+- hosts: 3.238.163.54
+  tasks:
     - name: install packages
       apt:
         name: tomcat
